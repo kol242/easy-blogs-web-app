@@ -1,0 +1,133 @@
+.create-post {
+    position: relative;
+    height: 100%;
+    button {
+        margin-top: 0;
+    }
+    .router-button {
+        text-decoration: none;
+        color: #fff;
+    }
+    label,
+    button,
+    .router-button {
+        transition: 0.5s ease-in-out all;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 12px 24px;
+        color: #222629;
+        background-color: #86C232;
+        text-decoration: none;
+        &:hover {
+            background-color: #222629;
+            color: #fff;
+        }
+    }
+    .container {
+        position: relative;
+        height: 100%;
+        padding: 10px 25px 60px;
+    }
+    // error styling
+    .invisible {
+        opacity: 0 !important;
+    }
+    .err-message {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        color: #fff;
+        margin-bottom: 10px;
+        background-color: #303030;
+        opacity: 1;
+        transition: 0.5s ease all;
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+    .blog-info {
+        display: flex;
+        margin-bottom: 32px;
+        input:nth-child(1) {
+            min-width: 300px;
+        }
+        input {
+            transition: 0.5s ease-in-out all;
+            padding: 10px 4px;
+            border: none;
+            border-bottom: 1px solid #303030;
+            @media (max-width: 820px) {
+                height: 50px;
+                align-self: center;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: 0 1px 0 0 #303030;
+            }
+        }
+        .upload-file {
+            flex: 1;
+            margin-left: 16px;
+            position: relative;
+            display: flex;
+            input {
+                display: none;
+            }
+            .preview {
+                margin-left: 16px;
+                text-transform: initial;
+                @media(max-width: 820px) {
+                    margin-left: 0 !important;
+                }
+            }
+            span {
+                font-size: 12px;
+                margin-left: 16px;
+                align-self: center;
+                @media(max-width: 820px) {
+                    margin-left: 0 !important;
+                    align-self: flex-start;
+                }
+            }
+            @media (max-width: 820px) {
+                flex-direction: column;
+                align-items: stretch !important;
+                gap: 10px;
+            }
+        }
+        @media (max-width: 565px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    .editor {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        .quillWrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .ql-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: scroll;
+        }
+        .ql-editor {
+            padding: 20px 16px 30px;
+        }
+    }
+    .blog-actions {
+        margin-top: 32px;
+        button {
+            margin-right: 16px;
+        }
+    }
+}
