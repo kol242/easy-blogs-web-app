@@ -109,7 +109,7 @@ button,
   margin-top: 24px;
   padding: 12px 24px;
   background-color: #86C232;
-  color: #000000;
+  color: #000;
   font-weight: 500;
   font-size: 14px;
   border-radius: 20px;

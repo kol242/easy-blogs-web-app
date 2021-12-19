@@ -15,6 +15,7 @@ export default new Vuex.Store({
     blogPhotoName: "",
     blogPhotoFileURL: null,
     blogPhotoPreview: null,
+    blogAuthor: null,
     editPost: null,
     user: null,
     profileAdmin: null,
@@ -98,7 +99,8 @@ export default new Vuex.Store({
             blogCoverPhoto: doc.data().blogCoverPhoto,
             blogTitle: doc.data().blogTitle,
             blogDate: doc.data().date,
-            blogCoverPhotoName: doc.data().blogCoverPhotoName 
+            blogCoverPhotoName: doc.data().blogCoverPhotoName ,
+            blogAuthor: doc.data().profileUsername
           }
           state.blogPosts.push(data)
         }

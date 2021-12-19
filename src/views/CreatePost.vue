@@ -114,6 +114,7 @@ export default {
                 blogCoverPhotoName: this.blogCoverPhotoName,
                 blogTitle: this.blogTitle,
                 profileId: this.profileId,
+                profileUsername: this.profileUsername,
                 date: timestamp,
               });
               await this.$store.dispatch("getPost");
@@ -141,6 +142,9 @@ export default {
   computed: {
     profileId() {
       return this.$store.state.profileId;
+    },
+    profileUsername () {
+      return this.$store.state.profileUsername;
     },
     blogCoverPhotoName() {
       return this.$store.state.blogPhotoName;

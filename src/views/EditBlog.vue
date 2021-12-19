@@ -122,7 +122,7 @@ export default {
                 blogHTML: this.blogHTML,
                 blogCoverPhoto: downloadURL,
                 blogCoverPhotoName: this.blogCoverPhotoName,
-                blogTitle: this.blogTitle,
+                blogTitle: this.blogTitle
               });
               await this.$store.dispatch("updatePost", this.routeID);
               this.loading = false;

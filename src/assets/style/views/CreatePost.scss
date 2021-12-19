@@ -11,17 +11,17 @@
     label,
     button,
     .router-button {
-        transition: 0.5s ease-in-out all;
+        transition: 0.3s ease-in-out all;
         font-size: 14px;
         cursor: pointer;
         border-radius: 20px;
         padding: 12px 24px;
-        color: #222629;
+        color: black;
         background-color: #86C232;
         text-decoration: none;
         &:hover {
-            background-color: #222629;
-            color: #fff;
+            background-color: #474B4f !important;
+            color: #fff !important;
         }
     }
     .container {

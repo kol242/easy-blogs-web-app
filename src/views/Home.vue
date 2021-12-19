@@ -39,9 +39,6 @@ export default {
       },
     }
   },
-  mounted () {
-    console.log(this.$store.getters.blogPostsCards)
-  },
   computed: {
     blogPostsFeed() {
       return this.$store.getters.blogPostsFeed
