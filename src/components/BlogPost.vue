@@ -6,11 +6,11 @@
               <h2 v-else>{{ post.blogTitle }}</h2>
               <p v-if="post.welcomeScreen">{{ post.blogPost }}</p>
               <p class="content-preview" v-else v-html="post.blogHTML"></p>
-              <router-link class="link link-light" v-if="post.welcomeScreen" :to="{ name: 'Login' }">
-                  Login/Register<Arrow class="arrow arrow-light" />
+              <router-link class="link-btn" v-if="post.welcomeScreen" :to="{ name: 'Login' }">
+                  Login/Register
               </router-link>
-              <router-link class="link" v-else :to="{ name: 'ViewBlog', params: {blogid: this.post.blogID} }">
-                  View the post<Arrow class="arrow" />
+              <router-link class="link-btn__dark" v-else :to="{ name: 'ViewBlog', params: {blogid: this.post.blogID} }">
+                  View the post
               </router-link>
           </div>
       </div>
@@ -22,14 +22,10 @@
 </template>
 
 <script>
-import Arrow from '../assets/Icons/arrow-right.svg'
 import '../assets/style/BlogPost.scss'
 export default {
     name: 'blogPost',
     props: ["post"],
-    components: {
-        Arrow
-    },
     computed: {
       user() {
       return this.$store.state.user;

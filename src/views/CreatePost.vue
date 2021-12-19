@@ -65,11 +65,9 @@ export default {
       this.$store.commit("fileNameChange", fileName);
       this.$store.commit("createFileURL", URL.createObjectURL(this.file));
     },
-
     openPreview() {
       this.$store.commit("openPhotoPreview");
     },
-
     imageHandler(file, Editor, cursorLocation, resetUploader) {
       const storageRef = firebase.storage().ref();
       const docRef = storageRef.child(`documents/blogPostPhotos/${file.name}`);
@@ -88,7 +86,6 @@ export default {
         }
       );
     },
-
     uploadBlog() {
       if (this.blogTitle.length !== 0 && this.blogHTML.length !== 0) {
         if (this.file) {

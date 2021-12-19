@@ -49,6 +49,13 @@ footer {
                 @media (min-width: 800px) {
                     gap: 0;
                 }
+                .link {
+                    transition: transform 0.2s ease;
+                }
+                .link:hover {
+                    transform: scale(1.08);
+                    transition: transform 0.2s ease-in;
+                }
             }
             .logo {
                 width: 35px;
@@ -75,6 +82,11 @@ footer {
                             color: #fff;
                             fill: #fff;
                             margin-right: 10px;
+                            transition: transform 0.2s ease;
+                        }
+                        .svg-icon:hover {
+                            transform: scale(1.4);
+                            transition: transform 0.2s ease;
                         }
                     }
                 }

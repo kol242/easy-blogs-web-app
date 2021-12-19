@@ -48,35 +48,57 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            .link {
+            .link-btn {
                 display: inline-flex;
                 align-items: center;
                 margin-top: 32px;
                 padding-bottom: 4px;
-                border-bottom: 1px solid transparent;
-                transition: 0.5s ease-in all;
-                &:hover {
-                    border-bottom-color: #303030;
-                }
+                border: 1px solid #fff;
+                border-radius: 23px;
+                padding: 12px 30px;
+                text-decoration: none;
+                color: #fff;
+                transition: 0.2s ease-in all;
             }
-            .link-light {
-                &:hover {
-                    border-bottom-color: #ffff;
-                }
+            .link-btn__dark {
+                display: inline-flex;
+                align-items: center;
+                margin-top: 32px;
+                padding-bottom: 4px;
+                border-radius: 23px;
+                padding: 12px 30px;
+                text-decoration: none;
+                color: black;
+                background: #86C232;
+                transition: 0.2s ease-in all;
+            }
+            .link-btn:hover {
+                transition: 0.2s ease-in all;
+                color: #000;
+                background: #61892f;
+                border: 1px solid #61892f;
+            }
+            .link-btn__dark:hover {
+                transition: 0.2s ease-in all;
+                color: #fff;
+                background: #474B4f;
             }
         }
-        .arrow {
-            margin-left: 8px;
-            width: 20px;
-            path {
-                fill: #000;
-            }
-        }
-        .arrow-light {
-            path {
-                fill: #fff;
-            }
-        }
+        // .arrow {
+        //     margin-left: 8px;
+        //     width: 20px;
+        //     path {
+        //         fill: #000;
+        //     }
+        // }
+        // .arrow-light {
+        //     path {
+        //         fill: #fff;
+        //     }
+        //     path:hover {
+        //         fill: #303030;
+        //     }
+        // }
     }
     .blog-photo {
         order: 1;

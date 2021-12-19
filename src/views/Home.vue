@@ -12,9 +12,9 @@
     </div>
     <div v-if="!user" class="updates">
         <div class="container">
-            <h2>Never miss a post. Register for your free account today.</h2>
+            <h2>You wan't to leave post? Register for your free account today.</h2>
             <router-link class="router-button" :to="{ name: 'Register' }">
-                Register for EasyBlogs <Arrow class="arrow"/>
+                Register for EasyBlogs
             </router-link>
         </div>
     </div>
@@ -24,11 +24,10 @@
 <script>
 import BlogPost from '../components/BlogPost.vue'
 import BlogCard from '../components/BlogCard.vue'
-import Arrow from "../assets/Icons/arrow-right-light.svg";
 import '../assets/style/views/Home.scss'
 export default {
   name: "Home",
-  components: {BlogPost, BlogCard, Arrow},
+  components: {BlogPost, BlogCard},
   data() {
     return {
        welcomeScreen: {
@@ -39,6 +38,9 @@ export default {
         photo: "coding",
       },
     }
+  },
+  mounted () {
+    console.log(this.$store.getters.blogPostsCards)
   },
   computed: {
     blogPostsFeed() {
