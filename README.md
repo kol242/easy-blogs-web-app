@@ -1,6 +1,6 @@
 # Vue Webapp Example "EasyBlogs" - getting started
 
-![Webpage image](https://i.imgur.com/9z7SQxE.jpg)
+![Webpage image](https://i.imgur.com/9z7SQxE.jpg?1)
 
 To run the script, first clone or download this repository on your PC, then follow next steps.
 
