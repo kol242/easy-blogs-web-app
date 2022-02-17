@@ -1,4 +1,4 @@
-# Vue Webapp Example "EasyBlogs" - getting started
+# "EasyBlogs" web application
 
 ![Webpage image](https://i.imgur.com/9z7SQxE.jpg?1)
 
